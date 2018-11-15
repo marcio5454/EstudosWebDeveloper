@@ -3,21 +3,10 @@
 <head>
     <meta charset="utf-8" />
     <title>Conteúdo de Testes Ltda.</title>
-    <style>
-        body {
-            font-family:Arial, Helvetica, sans-serif;
-    </style>
+    <link href="styles/main.css" type="text/css" rel="stylesheet" />
 </head>
 <body>
-    <p>
-        <img src="images/header.png" />
-    </p>
-    <ul>
-        <li>Home</li>
-        <li>Sobre</li>
-        <li>Nossos serviços</li>
-        <li>Clientes</li>
-    </ul>
+    <div id="nav"></div>
     <h1>Conteúdo de Testes Ltda.</h1>
     <br>
     A Conteúdo de Testes Ltda. é uma empresa dedicas.
@@ -27,10 +16,28 @@
     <br>
     Temos a honra de sempre estar atendendo nossos cliente com o mehor do nosso trabalho.
     <br>
+    <br>
     <p>
-
-
-
+        <h3>Inscreva-se em nosso site</h3>
     </p>
+    <form>
+        <label for="firstname">Nome: </label><input type="text" id="firstname" name="firstname" /><br />
+        <label for="secondname">Sobrenome: </label><input type="text" id="secondname" name="secondname" /><br />
+        <label for="email">e-mail: </label><input type="text" id="email" name="email" /><br />
+        <label for="password">senha: </label><input type="text" id="password" name="password" /><br />
+        <label for="checkpassword">confirmação da senha: </label><input type="text" id="checkpassword" name="checkpassword" /><br />
+        <label for="sexo">Sexo: </label>
+        <input type="radio" id="sexo" name="sexo" value="masculino" />Masculino
+        <input type="radio" id="sexo" name="sexo" value="feminino" />Feminino
+        <br />
+        <br />
+        <button onclick="alert('asdas');">Inscrever</button>&nbsp;
+        <button>Cancelar</button>
+    </form>
+    <br>
 </body>
 </html>
+<script type="text/javascript" src="Scripts/jquery-3.3.1.js"></script>
+<script type="text/javascript" src="Scripts/main.js"></script>
+
+
